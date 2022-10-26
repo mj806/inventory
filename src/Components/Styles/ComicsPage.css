@@ -1,0 +1,216 @@
+.HeaderSec {
+    display: grid;
+    place-items: center;
+}
+.HeaderSec h1 {
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.linebreak {
+    display: none;
+}
+
+@media screen and (min-width: 360px) and (orientation:portrait){
+    .HeaderSec {
+        display: grid;
+        place-items: center;
+        margin-top: 4rem;
+        text-align: center;
+    }
+    .HeaderSec p {
+        width: 280px;
+    }
+    .linebreak {
+        display: block;
+        margin: 0 1rem;
+        width: auto;
+        background-color: rgba(150,150,150,0.2);
+    }
+    .Infobutton {
+        display: none;
+    }
+}
+
+.comic-row1 {
+    /*display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 1.5rem;
+}
+
+@media screen and (min-width: 360px) and (orientation:portrait){
+    .comic-row1 {
+        display: block;
+        padding: 0;
+        margin: 0 0.3rem;
+    }
+}
+@media screen and (min-width: 768px) and (orientation:portrait){
+    .comic-row1 {
+        display: block;
+        padding: 0;
+        margin: 0 3.3rem;
+    }
+}
+
+.comic-row2 {
+    /*display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+@media  screen and (min-width: 360px) and (orientation:portrait){
+    .comic-row2{
+        display: block;
+        margin: 0 0.3rem;
+        margin-top: 4rem;
+    }
+}
+@media screen and (min-width: 768px) and (orientation:portrait){
+    .comic-row2{
+        display: block;
+        margin: 0 3.3rem;
+        margin-top: 4rem;
+    }
+}
+
+.comic {
+    position: relative;
+    height: 250px;
+    width: 205px;
+    /*cursor: pointer;*/
+    border:1px solid rgba(150,150,150,0.2);
+    background:-webkit-linear-gradient(top,rgba(255,255,255,0.1),transparent);
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+    text-align: center;
+    line-height:400px;
+    box-shadow: inset 5px 5px 20px rgba(255,255,255,0.1);
+    z-index: 1;
+}
+
+@media  screen and (min-width: 360px) and (orientation:portrait){
+    .comic{
+        height: 150px;
+        width: 115px;
+        margin: 1rem;
+    }
+}
+
+.comic::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 105px;
+    height: 100%;
+    left: 90px;
+    top: 0;
+    filter: blur(1px);
+    animation: shine 5.5s ease-in-out infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes shine{
+    10%{
+        opacity: 0;
+        background: rgba(200,200,200,0.0);
+        transform: translateX(-1000px) skewX(45deg);
+    }
+    100%{
+        opacity: 1;
+        background: -webkit-linear-gradient(top, transparent, rgba(200,200,200,0.1),transparent);
+        transform: translateX(300px) skewX(45deg);
+    }
+}
+
+.Infobutton {
+    background-color: rgba(86, 158, 241, 0.685);
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    border: 2px solid rgba(235, 239, 245, 0.493);
+    cursor: pointer;
+    margin-top: -4rem;
+    margin-left: 2.5rem;
+    float: left;
+    position: relative;
+    z-index: 1;
+}
+
+.comic-content {
+    width: 80%;
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+    grid-gap: 1rem;
+}
+
+.searchBox {
+    width: 95%;
+}
+
+.comic-search-bar {
+    width: 25%;
+    margin: 0 auto;
+    display: flex;
+    outline: none;
+    border-radius: 25px;
+    border: none;
+    padding: 0.7rem;
+    background: rgb(228, 228, 228);
+    align-items: center;
+  }
+.comic-search-bar:hover {
+    transition: 0.4s ease-in-out;
+    background-color: black;
+    color: aliceblue;
+}
+
+.comic img {
+    width: 100%;
+    height: 100%;
+    /*display: none;*/
+    transition: 0.5s;
+    z-index: 2;
+}
+
+
+
+.comic-text {
+    display: none;
+}
+@media  screen and (min-width: 360px) and (orientation:portrait) {
+    .comic img {
+        height: 150%;
+        width: 100%;
+        margin: 0;
+    }
+    .comic-div{
+        display: flex;
+    }
+    .comic-content {
+        width: 100%;
+    }
+    .comic-search-bar {
+        width: 75%;
+    }
+    .comic-text {
+        display: flex;
+        margin: 1rem;
+        width: 200px;
+        justify-content: center;
+        align-items: center;
+
+    }
+}

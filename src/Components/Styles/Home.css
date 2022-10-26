@@ -1,0 +1,369 @@
+.AN {
+    font-size: 150px;
+}
+.Home-Intro {
+    width: auto;
+    font-weight: 600;
+}
+@media screen and (min-width: 360px) and (orientation:portrait) {
+    .Home-Intro {
+        width: 100%;
+    }
+    .Title1 {
+        flex-direction: column;
+        font-size: 70px;
+        padding-top: 20px;
+    }
+    .MC {
+        flex-direction: column;
+        font-size: 50px;
+    }
+    .AN {
+        flex-direction: column;
+        font-size: 100px;
+    }
+    .top {
+        padding-left: 2rem;
+    }
+    .bottom {
+        padding-left: 8rem;
+    }
+}
+
+.loop {
+    font-size: 150px;
+}
+
+.MC {
+    padding: 0 2rem;
+    font-size: 150px;
+    z-index: 0;
+}
+.marq {
+    z-index: 0;
+    overflow: hidden;
+}
+
+/******************************************/
+
+.Intro-Expln {
+    height: 1000px;
+    width: auto;
+    border: 2px solid crimson;
+    background: linear-gradient(-225deg, crimson, red);
+    padding: 5rem;
+}
+.Intro-Expln h1 {
+    font-size: 2.5rem;
+}
+.IP {
+    font-weight: 600;
+    padding: 8.5rem;
+}
+.P2 {
+    margin-left: -2.5em;
+    text-align: center;
+}
+.P3 {
+    margin-left: 42.5em;
+    margin-top: -8rem;
+}
+
+.IPic1 {
+    height: 220px;
+    width: 160px;
+    border: 2px solid aliceblue;
+    float: left;
+    margin-left: 34rem;
+    margin-top: -8rem;
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/1/16/Captain_Marvel_29.jpg);
+    background-size: cover;
+}
+.IPic2 {
+    height: 220px;
+    width: 160px;
+    border: 2px solid aliceblue;
+    float: left;
+    margin-left: 48rem;
+    margin-top: -14rem;
+    background-image: url(https://terrigen-cdn-dev.marvel.com/content/prod/1x/clean_365.jpg);
+    background-size: cover;
+}
+.IPic3 {
+    height: 220px;
+    width: 160px;
+    border: 2px solid aliceblue;
+    float: left;
+    margin-top: 4rem;
+    background-image: url(https://cdn.shopify.com/s/files/1/0990/1714/products/image_from_ios-4_e79bc6d4-0e84-4ccb-982e-8741dcb43a06.jpg?v=1641232582);
+    background-size: cover;
+}
+.IPic4 {
+    height: 220px;
+    width: 160px;
+    border: 2px solid aliceblue;
+    float: left;
+    margin-left: 54rem;
+    margin-top: -14rem;
+    background-image: url(https://images-na.ssl-images-amazon.com/images/I/81gGOp8gftL.jpg);
+    background-size: cover;
+}
+.IPic5 {
+    height: 220px;
+    width: 160px;
+    border: 2px solid aliceblue;
+    float: left;
+    margin-left: 35rem;
+    background-image: url(https://atomicjunkshop.com/wp-content/uploads/2019/12/IMG_20191228_0003-scaled.jpg);
+    background-size: cover;
+}
+@media screen and (min-width: 360px) and (orientation:portrait) {
+    .Intro-Expln {
+        padding: 0rem;
+        height: 2000px;
+        margin-top: 10rem;
+        width: 410px;
+    }
+    .Intro-Expln h1 {
+        width: 5rem;
+    }
+    .IP {
+        text-align: center;
+    }
+    .P1 {
+        margin-left: -3em;
+        text-align: center;
+    }
+    .P2 {
+        margin-left: -4em;
+        text-align: center;
+        width: 10rem;
+    }
+    .P3 {
+        margin-left: -4em;
+        text-align: center;
+        width: 10rem;
+        margin-top: 0rem;
+    }
+    .Info-cat {
+        margin-left: 2rem;
+    }
+
+    .IPic1 {
+        height: 220px;
+        width: 160px;
+        border: 2px solid #2f8fe4;
+        float: left;
+        margin-left: -1rem;
+        margin-top: 2rem;
+    }
+    .IPic2 {
+        display: none;
+    }
+    .IPic3 {
+        display: none;
+    }
+    .IPic4 {
+        height: 220px;
+        width: 160px;
+        border: 2px solid #2f8fe4;
+        margin-left: 0rem;
+        margin-top: 2rem;
+    }
+    .IPic5 {
+        display: none;
+    }
+}
+
+/**********************************************/
+
+.Outro-Expln {
+    height: 700px;
+    width: auto;
+    background-color: #c7d0da;
+    z-index: 1;
+}
+.shuffle {
+    border: 3px solid dodgerblue;
+    background-color: #c7d0da;
+    height: 700px;
+    width: auto;
+    clip-path: inset(5% 8.5% 10% 8%);
+    z-index: -1;
+  }
+  .card {
+    height: auto;
+    width: 400px;
+    border-radius: 12px;
+    transform: rotate(25deg);
+    z-index: -1;
+    display: flex;
+  }
+
+@media screen and (min-width: 360px) and (orientation:portrait) {
+    .card {
+        transform: rotate(0);
+        display: flex;
+    }
+    .Outro-Expln {
+        height: 800px;
+        width: 410px;
+    }
+    .shuffle {
+        height: 800px;
+        width: auto;
+    }
+}
+
+  .card1 {
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/1/16/Captain_Marvel_29.jpg);
+    height: 210px;
+    width: 140px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 1rem;
+  }
+  .card2 {
+    background-image: url(https://terrigen-cdn-dev.marvel.com/content/prod/1x/clean_365.jpg);
+    height: 210px;
+    width: 140px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 1rem;
+    
+  }
+  .card3 {
+    background-image: url(https://lumiere-a.akamaihd.net/v1/images/maractsminf001_cov_2a89b17b.jpeg?region=0%2C0%2C1844%2C2800);
+    height: 210px;
+    width: 140px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 1rem;
+    
+  }
+  .card4 {
+    background-image: url(https://legacycomics.com/wp-content/uploads/2019/07/marvel-comics-1000-mcguinness.png);
+    height: 210px;
+    width: 140px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 1rem;
+  }
+  .card5 {
+    background-image: url(https://images-na.ssl-images-amazon.com/images/I/81GhmQvIJ8L.jpg);
+    height: 210px;
+    width: 140px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 1rem;
+  }
+  .card6 {
+    background-image: url(https://terrigen-cdn-dev.marvel.com/content/prod/1x/avengers50_infinitysaga_variant.jpg);
+    height: 210px;
+    width: 140px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 1rem;
+  }
+  .card7 {
+    background-image: url(https://img.buzzfeed.com/buzzfeed-static/static/2022-03/30/23/asset/7424098572a5/sub-buzz-522-1648681940-27.jpg?crop=828:1281;224,336&resize=990:*?output-quality=auto&output-format=auto&downsize=640:*);
+    height: 210px;
+    width: 140px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 1rem;
+  }
+  .card8 {
+    background-image: url(https://preview.redd.it/v6b712rjkhp71.jpg?auto=webp&s=7bfa00126459b251eecc0ceffa054d38abae4191);
+    height: 210px;
+    width: 140px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 1rem;
+  }
+  .card9 {
+    background-image: url(https://i.annihil.us/u/prod/marvel/i/mg/7/30/5f594309d8c6d/portrait_uncanny.jpg);
+    height: 210px;
+    width: 140px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 1rem;
+  }
+  .card10 {
+    background-image: url(http://comicbasics.com/wp-content/uploads/2018/04/Giant-Size-X-Men-1-663x1024.png);
+    height: 210px;
+    width: 140px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 1rem;
+  }
+  .card11 {
+    background-image: url(http://comicbasics.com/wp-content/uploads/2018/04/Incredible-Hulk-181-689x1024.png);
+    height: 210px;
+    width: 140px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 1rem;
+  }
+  .card12 {
+    background-image: url(https://www.previewsworld.com/SiteImage/MainImage/STL127811);
+    height: 210px;
+    width: 140px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 1rem;
+  }
+
+/*****************************************************************************/
+                                 /*Now this covers the recommend suggestions*/
+                                 /************************************************************/
+
+.Rec {
+    height: 400px;
+    width: 900px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    margin-top: -39rem;
+    margin-left: 12rem;
+    border-radius: 25px;
+    float: left;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.Rec p {
+    font-size: 30px;
+    color: aliceblue;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.Book {
+    height: 280px;
+    width: 200px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.55);
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 360px) and (orientation:portrait){
+    .Rec {
+        width: auto;
+        height: 550px;
+        margin-left: 2.8rem;
+    }
+    .Book {
+        height: 160px;
+        width: 130px;
+    }
+    .Book3, .Book4 {
+        margin-top: -6rem;
+    }
+    .Rec p {
+        margin: -4rem 3rem
+    }
+}
