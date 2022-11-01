@@ -13,8 +13,10 @@
 }
 .SupportFeedback p {
     margin-top: -2rem;
+    text-align: center;
 }
 .MoreInfo {
+    text-align: center;
     display: flex;
     gap: 10px;
     padding: 0 2rem;
@@ -23,10 +25,13 @@
     font-size: 18px;
 }
 .MItitle {
-    display: flex;
-    margin-left: 4rem;
+    text-align: center;
+    margin: 0;
     gap: 23rem;
     margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .talent {
     margin-left: 4rem;
@@ -71,6 +76,8 @@ hr {
 
 .moreLegalInfo {
     margin: 0 4rem;
+    display: grid;
+    place-items: center;
 }
 .moreLegalInfo h1 {
     font-size: 38px;
@@ -78,6 +85,7 @@ hr {
     text-transform: capitalize;
 }
 .moreLegalInfo p {
+    text-align: center;
     width: 680px;
     font-size: 18px;
 }

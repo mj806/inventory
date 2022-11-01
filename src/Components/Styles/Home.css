@@ -49,8 +49,7 @@
 .Intro-Expln {
     height: 1000px;
     width: auto;
-    border: 2px solid crimson;
-    background: linear-gradient(-225deg, crimson, red);
+    background-image: linear-gradient(135deg, rgb(255,0,0) 0%, rgb(255,0,0) 31%,rgb(240,22,22) 31%, rgb(240,22,22) 46%,rgb(223,29,29) 46%, rgb(223,29,29) 56%,rgb(180,27,27) 56%, rgb(180,27,27) 83%,rgb(160,20,20) 83%, rgb(160,20,20) 93%,rgb(129,27,27) 93%, rgb(129,27,27) 100%);
     padding: 5rem;
 }
 .Intro-Expln h1 {
